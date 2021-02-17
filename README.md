@@ -1,4 +1,4 @@
-[![Coverage Status](https://coveralls.io/repos/github/ashili/jsCalc/badge.svg?branch=main)](https://coveralls.io/github/ashili/jsCalc?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/ashili/jsCalc/badge.svg?branch=main)](https://coveralls.io/github/ashili/jsCalc?branch=main &&kill_cache=1)
 
 [![Build Status](https://travis-ci.com/ashili/jsCalc.svg?branch=main)](https://travis-ci.com/ashili/jsCalc)
 # jsCalc
