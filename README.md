@@ -15,7 +15,9 @@ IS219 1st project
 
 
 
-**<p align="center"> #OOP (Object-Oriented Programming) </p>** 
+
+
+**<h1 align="center"> OOP (Object-Oriented Programming) </h1>** 
 
 
 
