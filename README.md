@@ -15,7 +15,9 @@ IS219 1st project
 
 
 
-<p align="center"> #OOP (Object-Oriented Programming) </p> 
+#<p align="center"> #OOP (Object-Oriented Programming) </p> 
+
+
 
 Object-oriented programming is a programming paradigm centered around object rather than functions. 
 It has been around since the 70's. Many programming languages adopted OOP like c#, java, Python, Ruby... 
