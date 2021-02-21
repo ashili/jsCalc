@@ -79,8 +79,10 @@ Benefits of Abstraction:
 
 the term itself means to enclose things in a capsule. in other words, if you notice that many things can go together, you can encapsulate them in 1 enclosure.
 in coding, if you notice that many variables and functions are related to a common bigger concept, you can add them all together in 1 object. the variable will become properties, and the functions will be called methods.
-<p align="center"> 
-![alt text](./images/encapsulation.png)
+
+
+<p align="center">
+  <img width="460" height="300" src="./images/encapsulation.png">
 </p>
 in the case of the code uin this repo, the calculator class will encapsulate all necessary and related methods and properties in it so when you create an instance of the calculator , you will have access to all related functions that are useful to you.
 
