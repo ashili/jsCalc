@@ -15,7 +15,7 @@ IS219 1st project
 
 
 
-#<p style="text-align: center;"> OOP (Object-Oriented Programming) </p> 
+<p align="center"> #OOP (Object-Oriented Programming) </p> 
 
 Object-oriented programming is a programming paradigm centered around object rather than functions. 
 It has been around since the 70's. Many programming languages adopted OOP like c#, java, Python, Ruby... 
@@ -106,10 +106,7 @@ Solid design is shown in the naming of functions as the reading the name of the 
 ###2- O – Open-Closed Principle:
 
 Software elements (classes,modules,functions, etc...) should be open for extension but closed for modification.
-it sounds confusing 
-:confused: 
-
-. I know.
+it sounds confusing:confused:. I know.
 
 this means that you can build classes in a way that you can extend them via inheritance and child classes, but the parent class that you have created should not be modified.
 
