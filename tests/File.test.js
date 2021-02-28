@@ -6,10 +6,10 @@ test('test creating a file object', () => {
     expect(file).toBeInstanceOf(File);
 });
 
-//test static method
-// test('test getAbsolutePath method', () => {
-//     let path = File.getAbsolutePath("")
-//     expect(path).toThrowError();
-// });
+// test static method
+test('test getAbsolutePath method', () => {
+    const pathTest = File.getAbsolutePath("path1")
+    expect(pathTest).toBe("/Users/anisshili/WebstormProjects/jsCalc/path1");
+});
 
 
