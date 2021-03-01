@@ -4,7 +4,7 @@
 # jsCalc
 IS219 1st project
 
-###Direction:
+### Direction:
 
 - 1 Clone repo
 
@@ -232,7 +232,7 @@ They are not algorithms.
 They started in architecture (buildings)
 In coding, the famous GoF (Gang of Four) in 1994
 
-####Benefits:
+#### Benefits:
 
 >- They give our profession a shared language.
 >- Help avoid reinventing constantly.
