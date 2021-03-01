@@ -1,4 +1,4 @@
-[![Coverage Status](https://coveralls.io/repos/github/ashili/jsCalc/badge.svg?branch=main&kill_cache=0)](https://coveralls.io/github/ashili/jsCalc?branch=main&&)
+[![Coverage Status](https://coveralls.io/repos/github/ashili/jsCalc/badge.svg?branch=main&kill_cache=0)](https://coveralls.io/github/ashili/jsCalc?branch=main&service=github)
 
 
 [![Build Status](https://travis-ci.com/ashili/jsCalc.svg?branch=main)](https://travis-ci.com/ashili/jsCalc)
@@ -9,9 +9,20 @@ IS219 1st project
 
 -1 Clone repo
 
+in the terminal type:
+~~~bash
+git clone https://github.com/ashili/jsCalc.git
+~~~
+
 -2 cd into repo
+~~~bash
+cd jsCalc
+~~~
 
 -3 run "npm install"
+~~~bash
+npm install
+~~~
 
 
 
@@ -213,3 +224,19 @@ if you have an ecommerce site and what to use stripe API or paypal API , you can
 
 
 
+**<h1 align="center"> Design Patterns</h1>** 
+
+
+They are general and reusable solutions to common problems, not a finished solution
+They are not algorithms.
+
+They started in architecture (buildings)
+In coding, the famous GoF (Gang of Four) in 1994
+
+###Benefits:
+
+>- They give our profession a shared language.
+>- Help avoid re0inventing constantly.
+>- Provide a starting point for a solution.
+>- Speed up production.
+>- Improves system and application design.
