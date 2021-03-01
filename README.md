@@ -303,14 +303,73 @@ console.log(mean.calculateMean(numbers))
 
 ## Iterator Pattern
 
-Imagine you work with a variety of collection types, and you want to traverse them without knowing about their internal structure. The iterator pattern describes how to access the collection's members without violating encapsulation or single responsibility principle. you may refer the iterator as a cursor or pointer
+Imagine you work with a variety of collection types (array , tree, graph), and you want to traverse them without knowing about their internal structure. The iterator pattern describes how to access the collection's members without violating encapsulation or single responsibility principle. you may refer the iterator as a cursor or pointer
 
 > "it provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation."
 >  GOF
 
 Each collection type require 2 implementation:
-> - 1-  provide the iterator itself ( factory pattern)
-> - 2- implement the logic of iteration (the next method)
+> - 1-  Provide the iterator itself (factory pattern)
+> - 2- Implement the logic of iteration (the next method)
 
 
-this way the client can get an iterator and use it for traversal.
+This way the client can get an iterator and use it for a traversal.
+
+
+```javascript
+function Iterator(items){
+    this.items = items
+    this.index = 0
+}
+
+Iterator.prototype = {
+    hasNext:function(){
+        return this.index < this.items.length ? true : false
+    },
+    next: function (){
+        return this.items[this.index++]
+    }
+}
+
+// collection
+const elements = [1, 2, true, "hello", {x:2, y:4}];
+//use of iterator 
+const it = new Iterator(elements)
+
+console.log(it.hasNext()) // will return true
+console.log(it.next()) // will return the first element
+```
+
+
+## The Singleton Pattern
+
+it is used when you only want a **single**  instance of a class
+
+```javascript
+class CalcualtorSetting{
+    constructor(){
+        // check if an instance of the class was already initiated
+        if (CalculatorSetting.instance instanceof  CalcualtorSetting){
+            return CalculatorSetting.instance;
+        }
+        this.CalculatorObject = {
+            'type': 'simple',
+            'version': 1.4
+        };
+        // protect the calculatorObject from being accessed or modified
+        Object.freeze(this.CalculatorObject)
+        // freeze the class
+        Object.freeze(this)
+        CalculatorSetting.instance = this; // the key to the singleton pattern
+    }
+    get(key){
+        return this.CalculatorObject[key];
+    }
+}
+
+const c1 = new CalcualtorSetting()
+const c2 = new CalcualtorSetting()
+
+//if we console log c1 and c2, we will notice they are the same instance of the class
+
+```
