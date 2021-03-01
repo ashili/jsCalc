@@ -22,7 +22,7 @@ IS219 1st project
 
 
 
-Object-oriented programming is a programming paradigm centered around object rather than functions. 
+Object-oriented programming is a programming paradigm centered around object rather than functions.
 It has been around since the 70's. Many programming languages adopted OOP like c#, java, Python, Ruby... 
 Even some frameworks are designed with oop concept in mind such us Angular.
 
