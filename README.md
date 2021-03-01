@@ -241,7 +241,7 @@ In coding, the famous GoF (Gang of Four) in 1994
 >- Improves system and application design.
 
 
-##Strategy Pattern
+## Strategy Pattern
 
 This pattern is based on the following design principle: ” identify the aspects of your code that vary and separate them from what stays the same.”  = encapsulate what varies.
 
