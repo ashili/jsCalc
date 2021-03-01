@@ -6,19 +6,19 @@ IS219 1st project
 
 ###Direction:
 
--1 Clone repo
+- 1 Clone repo
 
 in the terminal type:
 ~~~bash
 git clone https://github.com/ashili/jsCalc.git
 ~~~
 
--2 cd into repo
+- 2 cd into repo
 ~~~bash
 cd jsCalc
 ~~~
 
--3 run "npm install"
+- 3 run "npm install"
 ~~~bash
 npm install
 ~~~
@@ -232,10 +232,85 @@ They are not algorithms.
 They started in architecture (buildings)
 In coding, the famous GoF (Gang of Four) in 1994
 
-###Benefits:
+####Benefits:
 
 >- They give our profession a shared language.
->- Help avoid re0inventing constantly.
+>- Help avoid reinventing constantly.
 >- Provide a starting point for a solution.
 >- Speed up production.
 >- Improves system and application design.
+
+
+##Strategy Pattern
+
+This pattern is based on the following design principle: ” identify the aspects of your code that vary and separate them from what stays the same.”  = encapsulate what varies.
+
+Inheritance is a key principle of OOP, but we tend to overuse it which can result in design and code being inflexible.
+
+
+in the example of a calculator we can get the mean in 3 different way, but the strategy pattern will allow us to create a strategy class that when called with appropriate argument can automatically call the appropriate mean function
+
+
+
+```javascript
+function StandardMean(){
+    this.calculateMean = arr =>{
+        //the sum of the numerical values of each and every observation divided by the total number of observations. 
+        return 26.2
+    }
+}
+
+function AssumedMean(){
+    this.calculateMean = arr =>{
+        //assumed mean is a method for calculating the arithmetic mean and standard deviation of a data set 
+        return 26.2
+    }
+}
+
+function DeviationMethod(){
+    this.calculateMean = arr =>{
+    //divide  the weighted sum of elements by the number of elements
+       return 26.2
+    }
+}
+numbers = [12,33,45,22,19]
+const sMean = new StandardMean()
+const aMean = new AssumedMean()
+const dMean = new DeviationMethod()
+
+```
+instead of calculating the mean by call the method on the object that we want to use, we can create a strategy class that take care of that.
+```javascript
+function Mean(){
+    this.choice= ""
+    this.setStrategy = choice=>{
+        this.choice = choice
+    }
+    this.calculateMean = arr =>{
+        return this.choice.calculateMean(arr)
+    }
+}
+```
+
+Now we can use our strategy pattern.
+
+```javascript
+const mean = new Mean;
+mean.setStrategy(sMean)
+console.log(mean.calculateMean(numbers))
+```
+
+
+## Iterator Pattern
+
+Imagine you work with a variety of collection types, and you want to traverse them without knowing about their internal structure. The iterator pattern describes how to access the collection's members without violating encapsulation or single responsibility principle. you may refer the iterator as a cursor or pointer
+
+> "it provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation."
+>  GOF
+
+Each collection type require 2 implementation:
+> - 1-  provide the iterator itself ( factory pattern)
+> - 2- implement the logic of iteration (the next method)
+
+
+this way the client can get an iterator and use it for traversal.
